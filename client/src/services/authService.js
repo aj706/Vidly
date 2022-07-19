@@ -2,7 +2,9 @@ import jwtDecode from "jwt-decode";
 import http from "./http";
 import config from "../config.json";
 
-const apiEndpoint = config.apiUrl + "/auth";
+const port = process.env.port || config.port;
+
+const apiEndpoint = config.apiUrl + port + "/api/auth";
 const tokenKey = "token";
 
 http.setJwt(getJwt());
@@ -33,10 +35,12 @@ export function getJwt() {
   return localStorage.getItem(tokenKey);
 }
 
-export default {
+const exportedObject = {
   login,
   loginWithJwt,
   logout,
   getCurrentUser,
   getJwt,
 };
+
+export default exportedObject;
