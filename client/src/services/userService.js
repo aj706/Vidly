@@ -1,8 +1,7 @@
 import http from "./http";
 import config from "../config.json";
 
-const port = process.env.PORT || config.port;
-const apiEndpoint = config.apiUrl + port + "/api/users";
+const apiEndpoint = "/users";
 
 export function register(user) {
   return http.post(apiEndpoint, {

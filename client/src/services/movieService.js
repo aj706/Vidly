@@ -1,8 +1,6 @@
 import http from "./http";
-import config from "../config.json";
 
-const port = process.env.PORT || config.port;
-const apiEndpoint = config.apiUrl + port + "/api/movies";
+const apiEndpoint = "/movies";
 
 function movieUrl(id) {
   return `${apiEndpoint}/${id}`;
