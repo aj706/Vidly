@@ -1,7 +1,7 @@
 import http from "./http";
 import config from "../config.json";
 
-const port = process.env.port || config.port;
+const port = process.env.PORT || config.port;
 const apiEndpoint = config.apiUrl + port + "/api/movies";
 
 function movieUrl(id) {

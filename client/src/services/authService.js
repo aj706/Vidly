@@ -2,7 +2,7 @@ import jwtDecode from "jwt-decode";
 import http from "./http";
 import config from "../config.json";
 
-const port = process.env.port || config.port;
+const port = process.env.PORT || config.port;
 
 const apiEndpoint = config.apiUrl + port + "/api/auth";
 const tokenKey = "token";
