@@ -4,12 +4,11 @@ const config = require("config");
 const app = express();
 const path = require("path");
 require("dotenv").config();
-var cors = require("cors");
 
-app.use(cors());
 app.use(express.static(path.join(__dirname, "client", "build")));
 
 require("./startup/logging")();
+require("./startup/cors")(app);
 require("./startup/routes")(app);
 require("./startup/db")();
 require("./startup/config")();
