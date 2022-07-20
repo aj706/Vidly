@@ -151,3 +151,7 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2022-07-20T05:55:55.301Z"}
 {"level":"info","message":"Listening on port 4000...","timestamp":"2022-07-20T05:57:05.858Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2022-07-20T05:57:05.894Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2022-07-20T07:13:01.807Z"}
+{"level":"info","message":"Connected to mongodb+srv://bluebeast007:ucc%40Aj0706@ecom.y40no.mongodb.net/vidly...","timestamp":"2022-07-20T07:13:02.659Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2022-07-20T07:14:18.399Z"}
+{"level":"info","message":"Connected to mongodb+srv://bluebeast007:ucc%40Aj0706@ecom.y40no.mongodb.net/vidly...","timestamp":"2022-07-20T07:14:18.911Z"}
